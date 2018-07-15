@@ -1,0 +1,8 @@
+F:\automate\v2\host\test\Pipe\ExampleCLI\bin\Debug\ExampleCLI.exe
+F:\automate\v2\host\test\Pipe\ExampleCLI\bin\Debug\ExampleCLI.pdb
+F:\automate\v2\host\test\Pipe\ExampleCLI\bin\Debug\NamedPipeWrapper.dll
+F:\automate\v2\host\test\Pipe\ExampleCLI\bin\Debug\NamedPipeWrapper.pdb
+F:\automate\v2\host\test\Pipe\ExampleCLI\bin\Debug\NamedPipeWrapper.xml
+F:\automate\v2\host\test\Pipe\ExampleCLI\obj\Debug\ExampleCLI.csprojResolveAssemblyReference.cache
+F:\automate\v2\host\test\Pipe\ExampleCLI\obj\Debug\ExampleCLI.exe
+F:\automate\v2\host\test\Pipe\ExampleCLI\obj\Debug\ExampleCLI.pdb

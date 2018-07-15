@@ -1,0 +1,12 @@
+F:\automate\v2\host\test\Http\HttpServer.MVC\obj\Debug\HttpServer.MVC.csprojResolveAssemblyReference.cache
+F:\automate\v2\host\test\Http\HttpServer.MVC\bin\Debug\HttpServer.MVC.dll.config
+F:\automate\v2\host\test\Http\HttpServer.MVC\bin\Debug\HttpServer.MVC.dll
+F:\automate\v2\host\test\Http\HttpServer.MVC\bin\Debug\HttpServer.MVC.pdb
+F:\automate\v2\host\test\Http\HttpServer.MVC\bin\Debug\Fadd.dll
+F:\automate\v2\host\test\Http\HttpServer.MVC\bin\Debug\HttpServer.dll
+F:\automate\v2\host\test\Http\HttpServer.MVC\bin\Debug\xunit.dll
+F:\automate\v2\host\test\Http\HttpServer.MVC\bin\Debug\HttpServer.pdb
+F:\automate\v2\host\test\Http\HttpServer.MVC\bin\Debug\HttpServer.xml
+F:\automate\v2\host\test\Http\HttpServer.MVC\bin\Debug\Fadd.xml
+F:\automate\v2\host\test\Http\HttpServer.MVC\obj\Debug\HttpServer.MVC.dll
+F:\automate\v2\host\test\Http\HttpServer.MVC\obj\Debug\HttpServer.MVC.pdb

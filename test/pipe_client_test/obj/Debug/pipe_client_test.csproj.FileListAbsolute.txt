@@ -1,0 +1,8 @@
+F:\automate\v2\host\pipe_client_test\bin\Debug\pipe_client_test.exe
+F:\automate\v2\host\pipe_client_test\bin\Debug\pipe_client_test.pdb
+F:\automate\v2\host\pipe_client_test\bin\Debug\NamedPipeWrapper.dll
+F:\automate\v2\host\pipe_client_test\bin\Debug\NamedPipeWrapper.pdb
+F:\automate\v2\host\pipe_client_test\bin\Debug\NamedPipeWrapper.xml
+F:\automate\v2\host\pipe_client_test\obj\Debug\pipe_client_test.csprojResolveAssemblyReference.cache
+F:\automate\v2\host\pipe_client_test\obj\Debug\pipe_client_test.exe
+F:\automate\v2\host\pipe_client_test\obj\Debug\pipe_client_test.pdb

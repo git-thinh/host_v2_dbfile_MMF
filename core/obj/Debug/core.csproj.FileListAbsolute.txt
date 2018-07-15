@@ -1,0 +1,9 @@
+F:\automate\v2\host\core\bin\Debug\core.dll
+F:\automate\v2\host\core\bin\Debug\core.pdb
+F:\automate\v2\host\core\obj\Debug\core.dll
+F:\automate\v2\host\core\obj\Debug\core.pdb
+F:\automate\v2\host\core\bin\Debug\model.dll
+F:\automate\v2\host\core\bin\Debug\Newtonsoft.Json.dll
+F:\automate\v2\host\core\bin\Debug\model.pdb
+F:\automate\v2\host\core\bin\Debug\Newtonsoft.Json.xml
+F:\automate\v2\host\core\obj\Debug\core.csprojResolveAssemblyReference.cache

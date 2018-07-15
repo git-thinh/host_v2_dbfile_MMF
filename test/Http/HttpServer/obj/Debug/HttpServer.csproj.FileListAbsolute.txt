@@ -1,0 +1,5 @@
+F:\automate\v2\host\test\Http\HttpServer\bin\Debug\HttpServer.xml
+F:\automate\v2\host\test\Http\HttpServer\bin\Debug\HttpServer.dll
+F:\automate\v2\host\test\Http\HttpServer\bin\Debug\HttpServer.pdb
+F:\automate\v2\host\test\Http\HttpServer\obj\Debug\HttpServer.dll
+F:\automate\v2\host\test\Http\HttpServer\obj\Debug\HttpServer.pdb

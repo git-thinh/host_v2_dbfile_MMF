@@ -1,0 +1,13 @@
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\bin\Debug\ExampleGUI.exe
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\bin\Debug\ExampleGUI.pdb
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\bin\Debug\NamedPipeWrapper.dll
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\bin\Debug\NamedPipeWrapper.pdb
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\bin\Debug\NamedPipeWrapper.xml
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\obj\x86\Debug\ExampleGUI.csprojResolveAssemblyReference.cache
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\obj\x86\Debug\ExampleGUI.FormClient.resources
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\obj\x86\Debug\ExampleGUI.FormMain.resources
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\obj\x86\Debug\ExampleGUI.FormServer.resources
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\obj\x86\Debug\ExampleGUI.Properties.Resources.resources
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\obj\x86\Debug\ExampleGUI.csproj.GenerateResource.Cache
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\obj\x86\Debug\ExampleGUI.exe
+F:\_Core\_Lib\_pipe\named-pipe-wrapper-master\ExampleGUI\obj\x86\Debug\ExampleGUI.pdb

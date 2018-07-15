@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D68AA7C4-0FCD-4503-81EC-DA23875D35FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>core</RootNamespace>
+    <AssemblyName>core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HTTP\HttpServer\Authentication\AuthenticationModule.cs" />
+    <Compile Include="HTTP\HttpServer\Authentication\BasicAuthentication.cs" />
+    <Compile Include="HTTP\HttpServer\Authentication\DigestAuthentication.cs" />
+    <Compile Include="HTTP\HttpServer\Check.cs" />
+    <Compile Include="HTTP\HttpServer\ClientAcceptedEventArgs.cs" />
+    <Compile Include="HTTP\HttpServer\ComponentProvider.cs" />
+    <Compile Include="HTTP\HttpServer\ContentTypes.cs" />
+    <Compile Include="HTTP\HttpServer\ExceptionEventArgs.cs" />
+    <Compile Include="HTTP\HttpServer\ExceptionHandler.cs" />
+    <Compile Include="HTTP\HttpServer\Exceptions\BadRequestException.cs" />
+    <Compile Include="HTTP\HttpServer\Exceptions\ForbiddenException.cs" />
+    <Compile Include="HTTP\HttpServer\Exceptions\HttpException.cs" />
+    <Compile Include="HTTP\HttpServer\Exceptions\InternalServerException.cs" />
+    <Compile Include="HTTP\HttpServer\Exceptions\NotFoundException.cs" />
+    <Compile Include="HTTP\HttpServer\Exceptions\UnauthorizedException.cs" />
+    <Compile Include="HTTP\HttpServer\FormDecoders\FormDecoder.cs" />
+    <Compile Include="HTTP\HttpServer\FormDecoders\FormDecoderProvider.cs" />
+    <Compile Include="HTTP\HttpServer\FormDecoders\HttpMultipart.cs" />
+    <Compile Include="HTTP\HttpServer\FormDecoders\IFormDecoder.cs" />
+    <Compile Include="HTTP\HttpServer\FormDecoders\MultipartDecoder.cs" />
+    <Compile Include="HTTP\HttpServer\FormDecoders\UrlDecoder.cs" />
+    <Compile Include="HTTP\HttpServer\FormDecoders\XmlDecoder.cs" />
+    <Compile Include="HTTP\HttpServer\Helpers\FormHelper.cs" />
+    <Compile Include="HTTP\HttpServer\Helpers\GetIdTitle.cs" />
+    <Compile Include="HTTP\HttpServer\Helpers\Implementations\PrototypeImp.cs" />
+    <Compile Include="HTTP\HttpServer\Helpers\IniReader.cs" />
+    <Compile Include="HTTP\HttpServer\Helpers\JSHelper.cs" />
+    <Compile Include="HTTP\HttpServer\Helpers\ObjectForm.cs" />
+    <Compile Include="HTTP\HttpServer\Helpers\ResourceInfo.cs" />
+    <Compile Include="HTTP\HttpServer\Helpers\ResourceManager.cs" />
+    <Compile Include="HTTP\HttpServer\Helpers\WebHelper.cs" />
+    <Compile Include="HTTP\HttpServer\Helpers\XmlHelper.cs" />
+    <Compile Include="HTTP\HttpServer\HttpClientContext.cs" />
+    <Compile Include="HTTP\HttpServer\HttpContextFactory.cs" />
+    <Compile Include="HTTP\HttpServer\HttpFile.cs" />
+    <Compile Include="HTTP\HttpServer\HttpForm.cs" />
+    <Compile Include="HTTP\HttpServer\HttpHelper.cs" />
+    <Compile Include="HTTP\HttpServer\HttpInput.cs" />
+    <Compile Include="HTTP\HttpServer\HttpInputItem.cs" />
+    <Compile Include="HTTP\HttpServer\HttpListener.cs" />
+    <Compile Include="HTTP\HttpServer\HttpListenerBase.cs" />
+    <Compile Include="HTTP\HttpServer\HttpModules\FileModule.cs" />
+    <Compile Include="HTTP\HttpServer\HttpModules\HttpModule.cs" />
+    <Compile Include="HTTP\HttpServer\HttpModules\HttpModuleExceptionEventArgs.cs" />
+    <Compile Include="HTTP\HttpServer\HttpModules\ResourceFileModule.cs" />
+    <Compile Include="HTTP\HttpServer\HttpModules\ReverseProxyModule.cs" />
+    <Compile Include="HTTP\HttpServer\HttpModules\SimpleCommonGatewayInterfaceModule.cs" />
+    <Compile Include="HTTP\HttpServer\HttpModules\WebSiteModule.cs" />
+    <Compile Include="HTTP\HttpServer\HttpParam.cs" />
+    <Compile Include="HTTP\HttpServer\HttpRequest.cs" />
+    <Compile Include="HTTP\HttpServer\HttpResponse.cs" />
+    <Compile Include="HTTP\HttpServer\HttpServer.cs" />
+    <Compile Include="HTTP\HttpServer\IComponentProvider.cs" />
+    <Compile Include="HTTP\HttpServer\IHttpClientContext.cs" />
+    <Compile Include="HTTP\HttpServer\IHttpContextHandler.cs" />
+    <Compile Include="HTTP\HttpServer\IHttpRequest.cs" />
+    <Compile Include="HTTP\HttpServer\IHttpRequestParser.cs" />
+    <Compile Include="HTTP\HttpServer\IHttpResponse.cs" />
+    <Compile Include="HTTP\HttpServer\ILogWriter.cs" />
+    <Compile Include="HTTP\HttpServer\Method.cs" />
+    <Compile Include="HTTP\HttpServer\Parser\BodyEventArgs.cs" />
+    <Compile Include="HTTP\HttpServer\Parser\HeaderEventArgs.cs" />
+    <Compile Include="HTTP\HttpServer\Parser\HttpRequestParser.cs" />
+    <Compile Include="HTTP\HttpServer\Parser\RequestLineEventArgs.cs" />
+    <Compile Include="HTTP\HttpServer\Parser\RequestParserFactory.cs" />
+    <Compile Include="HTTP\HttpServer\RequestCookie.cs" />
+    <Compile Include="HTTP\HttpServer\RequestCookies.cs" />
+    <Compile Include="HTTP\HttpServer\RequestQueue.cs" />
+    <Compile Include="HTTP\HttpServer\RequestReceivedEventArgs.cs" />
+    <Compile Include="HTTP\HttpServer\ResponseCookie.cs" />
+    <Compile Include="HTTP\HttpServer\ResponseCookies.cs" />
+    <Compile Include="HTTP\HttpServer\Rules\IRule.cs" />
+    <Compile Include="HTTP\HttpServer\Rules\RedirectRule.cs" />
+    <Compile Include="HTTP\HttpServer\Rules\RegexRedirectRule.cs" />
+    <Compile Include="HTTP\HttpServer\Rules\Rule.cs" />
+    <Compile Include="HTTP\HttpServer\Sessions\HttpSession.cs" />
+    <Compile Include="HTTP\HttpServer\Sessions\HttpSessionStore.cs" />
+    <Compile Include="HTTP\HttpServer\Sessions\IHttpSession.cs" />
+    <Compile Include="HTTP\HttpServer\Sessions\IHttpSessionStore.cs" />
+    <Compile Include="HTTP\HttpServer\Sessions\MemorySession.cs" />
+    <Compile Include="HTTP\HttpServer\Sessions\MemorySessionStore.cs" />
+    <Compile Include="HTTP\HttpServer\Templates\SmartyEngine.cs" />
+    <Compile Include="HTTP\HttpServer\Templates\TemplateEngine.cs" />
+    <Compile Include="HTTP\mineType.cs" />
+    <Compile Include="LINQ\DictionaryList.cs" />
+    <Compile Include="LINQ\FullTextSearch.cs" />
+    <Compile Include="LINQ\Linq\LinqDynamicMultiSortingUtility.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Acquire.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Assert.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\AssertCount.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Batch.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Cartesian.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Concat.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Consume.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\DistinctBy.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\EquiZip.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\ExceptBy.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Exclude.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Fold.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Fold.g.cs">
+      <DependentUpon>Fold.g.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LINQ\Linq\MoreLinq\ForEach.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Generate.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\GenerateByIndex.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\GroupAdjacent.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Incremental.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Index.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Interleave.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Lag.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Lead.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\MaxBy.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\MinBy.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\MoreEnumerable.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\NestedLoops.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\OrderBy.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\OrderByDirection.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\OrderedMerge.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Pad.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Pairwise.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Partition.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Permutations.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Pipe.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Prepend.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\PreScan.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Random.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\RandomSubset.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Rank.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Repeat.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\RunLengthEncode.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Scan.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Segment.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\SequenceException.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\SingleOrFallback.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\SkipUntil.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Slice.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\SortedMerge.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Split.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Subsets.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\TagFirstLast.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\TakeEvery.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\TakeLast.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\TakeUntil.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\ToDataTable.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\ToDelimitedString.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\ToDelimitedString.g.cs">
+      <DependentUpon>ToDelimitedString.g.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LINQ\Linq\MoreLinq\ToHashSet.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Trace.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Windowed.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\Zip.stub.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\ZipLongest.cs" />
+    <Compile Include="LINQ\Linq\MoreLinq\ZipShortest.cs" />
+    <Compile Include="LINQ\Linq\v2\BasicQueryable.cs" />
+    <Compile Include="LINQ\Linq\v2\ClassFactory.cs" />
+    <Compile Include="LINQ\Linq\v2\Collection\DictionaryListValues.cs" />
+    <Compile Include="LINQ\Linq\v2\DynamicClass.cs" />
+    <Compile Include="LINQ\Linq\v2\DynamicExpression.cs" />
+    <Compile Include="LINQ\Linq\v2\DynamicLinqTypeProvider.cs" />
+    <Compile Include="LINQ\Linq\v2\DynamicOrdering.cs" />
+    <Compile Include="LINQ\Linq\v2\DynamicProperty.cs" />
+    <Compile Include="LINQ\Linq\v2\DynamicQueryable.cs" />
+    <Compile Include="LINQ\Linq\v2\ExpressionParser.cs" />
+    <Compile Include="LINQ\Linq\v2\Extend\DistinctExtension.cs" />
+    <Compile Include="LINQ\Linq\v2\Extend\ToListDynamic.cs" />
+    <Compile Include="LINQ\Linq\v2\GlobalConfig.cs" />
+    <Compile Include="LINQ\Linq\v2\GlobalSuppressions.cs" />
+    <Compile Include="LINQ\Linq\v2\GroupResult.cs" />
+    <Compile Include="LINQ\Linq\v2\IDynamicLinkTypeProvider.cs" />
+    <Compile Include="LINQ\Linq\v2\ParseException.cs" />
+    <Compile Include="LINQ\Linq\v2\Res.cs" />
+    <Compile Include="LINQ\Mapper\Drapper.net\SqlMapper.cs" />
+    <Compile Include="LINQ\Mapper\dynamic.cs" />
+    <Compile Include="LINQ\Mapper\dynamicJsonConverter.cs" />
+    <Compile Include="LINQ\Mapper\dynamicTypeBuilder.cs" />
+    <Compile Include="LINQ\Mapper\Slapper.AutoMapper.cs" />
+    <Compile Include="LINQ\Mustache\ArgumentCollection.cs" />
+    <Compile Include="LINQ\Mustache\CompoundGenerator.cs" />
+    <Compile Include="LINQ\Mustache\ConditionTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\ContentTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\Context.cs" />
+    <Compile Include="LINQ\Mustache\ContextParameter.cs" />
+    <Compile Include="LINQ\Mustache\EachTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\ElifTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\ElseTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\FormatCompiler.cs" />
+    <Compile Include="LINQ\Mustache\Generator.cs" />
+    <Compile Include="LINQ\Mustache\IArgument.cs" />
+    <Compile Include="LINQ\Mustache\IfTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\IGenerator.cs" />
+    <Compile Include="LINQ\Mustache\IndexTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\InlineGenerator.cs" />
+    <Compile Include="LINQ\Mustache\InlineTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\KeyFoundEventArgs.cs" />
+    <Compile Include="LINQ\Mustache\KeyGenerator.cs" />
+    <Compile Include="LINQ\Mustache\KeyNotFoundEventArgs.cs" />
+    <Compile Include="LINQ\Mustache\MasterTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\NestedContext.cs" />
+    <Compile Include="LINQ\Mustache\NewlineTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\NumberArgument.cs" />
+    <Compile Include="LINQ\Mustache\PlaceholderArgument.cs" />
+    <Compile Include="LINQ\Mustache\PlaceholderFoundEventArgs.cs" />
+    <Compile Include="LINQ\Mustache\PropertyDictionary.cs" />
+    <Compile Include="LINQ\Mustache\RegexHelper.cs" />
+    <Compile Include="LINQ\Mustache\Scope.cs" />
+    <Compile Include="LINQ\Mustache\SetTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\StaticGenerator.cs" />
+    <Compile Include="LINQ\Mustache\StringArgument.cs" />
+    <Compile Include="LINQ\Mustache\TagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\TagParameter.cs" />
+    <Compile Include="LINQ\Mustache\UpcastDictionary.cs" />
+    <Compile Include="LINQ\Mustache\ValueRequestEventArgs.cs" />
+    <Compile Include="LINQ\Mustache\VariableArgument.cs" />
+    <Compile Include="LINQ\Mustache\VariableFoundEventArgs.cs" />
+    <Compile Include="LINQ\Mustache\WithTagDefinition.cs" />
+    <Compile Include="LINQ\Mustache\_config.cs" />
+    <Compile Include="LINQ\Mustache\___test.cs" />
+    <Compile Include="MMF\BigArray\BigArray.cs" />
+    <Compile Include="MMF\BigArray\BigBooleanArray.cs" />
+    <Compile Include="MMF\BigArray\BigByteArray.cs" />
+    <Compile Include="MMF\BigArray\BigCharArray.cs" />
+    <Compile Include="MMF\BigArray\BigDecimalArray.cs" />
+    <Compile Include="MMF\BigArray\BigDoubleArray.cs" />
+    <Compile Include="MMF\BigArray\BigInt16Array.cs" />
+    <Compile Include="MMF\BigArray\BigInt32Array.cs" />
+    <Compile Include="MMF\BigArray\BigInt64Array.cs" />
+    <Compile Include="MMF\BigArray\BigSByteArray.cs" />
+    <Compile Include="MMF\BigArray\BigSingleArray.cs" />
+    <Compile Include="MMF\BigArray\BigUInt16Array.cs" />
+    <Compile Include="MMF\BigArray\BigUInt32Array.cs" />
+    <Compile Include="MMF\BigArray\BigUInt64Array.cs" />
+    <Compile Include="MMF\BigArray\CachedStream.cs" />
+    <Compile Include="MMF\hostFile.cs" />
+    <Compile Include="Pipe\IO\PipeStreamReader.cs" />
+    <Compile Include="Pipe\IO\PipeStreamWrapper.cs" />
+    <Compile Include="Pipe\IO\PipeStreamWriter.cs" />
+    <Compile Include="Pipe\NamedPipeClient.cs" />
+    <Compile Include="Pipe\NamedPipeConnection.cs" />
+    <Compile Include="Pipe\NamedPipeServer.cs" />
+    <Compile Include="Pipe\PipeExceptionEventHandler.cs" />
+    <Compile Include="Pipe\pipeServer.cs" />
+    <Compile Include="Pipe\Threading\Worker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Token\JWT.cs" />
+    <Compile Include="Token\JwtToken.cs" />
+    <Compile Include="Token\token.cs" />
+    <Compile Include="WS\ConnectionNotAvailableException.cs" />
+    <Compile Include="WS\FleckLog.cs" />
+    <Compile Include="WS\FrameType.cs" />
+    <Compile Include="WS\HandlerFactory.cs" />
+    <Compile Include="WS\Handlers\ComposableHandler.cs" />
+    <Compile Include="WS\Handlers\Draft76Handler.cs" />
+    <Compile Include="WS\Handlers\FlashSocketPolicyRequestHandler.cs" />
+    <Compile Include="WS\Handlers\Hybi13Handler.cs" />
+    <Compile Include="WS\HandshakeException.cs" />
+    <Compile Include="WS\Helpers\MonoHelper.cs" />
+    <Compile Include="WS\Interfaces\IHandler.cs" />
+    <Compile Include="WS\Interfaces\ISocket.cs" />
+    <Compile Include="WS\Interfaces\IWebSocketConnection.cs" />
+    <Compile Include="WS\Interfaces\IWebSocketConnectionInfo.cs" />
+    <Compile Include="WS\Interfaces\IWebSocketServer.cs" />
+    <Compile Include="WS\IntExtensions.cs" />
+    <Compile Include="WS\QueuedStream.cs" />
+    <Compile Include="WS\ReadState.cs" />
+    <Compile Include="WS\RequestParser.cs" />
+    <Compile Include="WS\SocketWrapper.cs" />
+    <Compile Include="WS\SubProtocolNegotiationFailureException.cs" />
+    <Compile Include="WS\SubProtocolNegotiator.cs" />
+    <Compile Include="WS\WebSocketConnection.cs" />
+    <Compile Include="WS\WebSocketConnectionInfo.cs" />
+    <Compile Include="WS\WebSocketException.cs" />
+    <Compile Include="WS\WebSocketHttpRequest.cs" />
+    <Compile Include="WS\WebSocketServer.cs" />
+    <Compile Include="WS\WebSocketStatusCodes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LINQ\Linq\MoreLinq\ToDelimitedString.g.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ToDelimitedString.g.cs</LastGenOutput>
+    </None>
+    <None Include="LINQ\Linq\MoreLinq\Fold.g.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Fold.g.cs</LastGenOutput>
+    </None>
+    <Content Include="LINQ\Linq\MoreLinq\_Node.txt" />
+    <Content Include="Pipe\___doc.txt" />
+    <Content Include="WS\_Note.txt" />
+    <None Include="LINQ\Linq\v2\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\model\model.csproj">
+      <Project>{849c170a-6165-426b-909e-7ec009abedf9}</Project>
+      <Name>model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

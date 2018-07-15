@@ -1,0 +1,13 @@
+F:\automate\v2\host\test\Pipe\ExampleGUI\bin\Debug\ExampleGUI.exe
+F:\automate\v2\host\test\Pipe\ExampleGUI\bin\Debug\ExampleGUI.pdb
+F:\automate\v2\host\test\Pipe\ExampleGUI\bin\Debug\NamedPipeWrapper.dll
+F:\automate\v2\host\test\Pipe\ExampleGUI\bin\Debug\NamedPipeWrapper.pdb
+F:\automate\v2\host\test\Pipe\ExampleGUI\bin\Debug\NamedPipeWrapper.xml
+F:\automate\v2\host\test\Pipe\ExampleGUI\obj\Debug\ExampleGUI.csprojResolveAssemblyReference.cache
+F:\automate\v2\host\test\Pipe\ExampleGUI\obj\Debug\ExampleGUI.FormClient.resources
+F:\automate\v2\host\test\Pipe\ExampleGUI\obj\Debug\ExampleGUI.FormMain.resources
+F:\automate\v2\host\test\Pipe\ExampleGUI\obj\Debug\ExampleGUI.FormServer.resources
+F:\automate\v2\host\test\Pipe\ExampleGUI\obj\Debug\ExampleGUI.Properties.Resources.resources
+F:\automate\v2\host\test\Pipe\ExampleGUI\obj\Debug\ExampleGUI.csproj.GenerateResource.Cache
+F:\automate\v2\host\test\Pipe\ExampleGUI\obj\Debug\ExampleGUI.exe
+F:\automate\v2\host\test\Pipe\ExampleGUI\obj\Debug\ExampleGUI.pdb

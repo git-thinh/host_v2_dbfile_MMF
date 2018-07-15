@@ -1,0 +1,16 @@
+F:\automate\v2\host\test\Http\HttpServer.Test\obj\Debug\HttpServer.Test.csprojResolveAssemblyReference.cache
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\HttpModules\TextFile1.txt
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\HttpModules\Forbidden.xml
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\HttpServer.Test.exe.config
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\HttpServer.Test.exe
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\HttpServer.Test.pdb
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\Fadd.dll
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\HttpServer.dll
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\HttpServer.MVC.dll
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\xunit.dll
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\HttpServer.MVC.pdb
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\HttpServer.pdb
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\HttpServer.xml
+F:\automate\v2\host\test\Http\HttpServer.Test\bin\Debug\Fadd.xml
+F:\automate\v2\host\test\Http\HttpServer.Test\obj\Debug\HttpServer.Test.exe
+F:\automate\v2\host\test\Http\HttpServer.Test\obj\Debug\HttpServer.Test.pdb
